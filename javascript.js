@@ -32,6 +32,7 @@ function lista(){
             const listaInfo = document.createElement('li');
             const listatexto = document.createElement('span');
             const botonLista = document.createElement('button');
+            
 
             //elementos que serán agregados dentro de li
             listaInfo.appendChild(listatexto);

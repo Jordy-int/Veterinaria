@@ -6,27 +6,68 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Elección-->
+    <p>¿Que desea hacer?</p>
+
+    <button id="eleccion_InicioDeSesion_Usuario" onclick="">Iniciar Sesión Usuario</button>
+    <button id="eleccion_InicioDeSesion_Veterinario" onclick="">Iniciar Sesión Veterinario</button>
+    <button id="eleccion_Registrar" onclick="">Registrar</button>
+
+    <!-- Registro del usuario -->
+    <p id="registrop">Registro de usuario</p>
+
+    <input id="nombreDueñoRegistro" placeholder="Nombre del dueño">
+    <input id="documentoRegistro" placeholder="Documento del dueño">
+    <input id="edadDueñoRegistro" placeholder="Edad" >
+
+    <input id="nombreMascotaRegistro" placeholder="Nombre de la Mascota">
+    <input id="especieRegistro" placeholder="Especie de la Mascota">
+    <input id="mascotaRegistro" placeholder="Raza de la mascota">
+
+    <button id="registro" onclick="">Registrar</button>
+
+    <!-- Inicio de Sesión del dueño -->
+
+    <p id="sesionp">Inicio de Sesión Usuario</p>
+
+    <input id="nombreDueñoSesion" placeholder="Nombre del dueño">
+    <input id="documentoSesion" placeholder="Documento del dueño">
+    
+    <button id="botonSesion" onclick="" >Iniciar Sesión</button>
+
+    <!-- Inicio de Sesión del veterinario -->
+
+    <p id="sesionPVeterinario">Inicio de Sesión Veterinario</p>
+
+    <input id="nombreVeterinario" placeholder="Nombre del veterinario">
+    <input id="documenVeterinario" placeholder="Documento del veterinario">
+
+    <button id="botonSesion" onclick="" >Iniciar Sesión</button>
+
+    <!-- Citas -->
+
+    <p id="citap">parrafo</p>
 
 
     <input id="nombreDueño" placeholder="Nombre del dueño">
     <input id="documento" placeholder="Documento del dueño">
-    
+
     <input id="perro" placeholder="Raza del perro">
     <input id="nombrePerro" placeholder="Nombre del perro">
     <input id="especie" placeholder="Especie del perro">
     <input id="perroPeso" placeholder="Peso del perro">
     <input id="perroAltura" placeholder="Altura del perro">
 
-    <button onclick="lista()" >Facturar</button>
-
-    <p id="cita">parrafo</p>
+    <button id="botonFacturar" onclick="lista()" >Facturar</button>
+    
+    <!--Lista que verá el veterinario-->
 
     <ul>
         
     </ul>
 
+    <p id="listaVeterinario">atrás esta la lista del veterinario</p>
     
-
     <script src="javascript.js"></script>
 </body>
 </html>
