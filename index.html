@@ -25,14 +25,23 @@
 
         <input id="nombreDueñoRegistro" placeholder="Nombre del dueño *">
         <input id="documentoRegistro" placeholder="Documento del dueño *">
-
-        <input id="edadMascotaRegistro" placeholder="Edad Mascota *" >
-        <input id="nombreMascotaRegistro" placeholder="Nombre de la Mascota *">
-        <input id="especieRegistro" placeholder="Especie de la Mascota *">
-        <input id="mascotaRegistro" placeholder="Raza de la mascota ">
-
-        <button id="registro">Registrar</button>
+        <input id="direccionDueño" placeholder="Dirección">
+        <input id="telefono" placeholder="Telefono *">
+        <button id="registro">Registrar Dueño</button>
         <button id="volver1">Inicio</button>
+
+        <div id="bloqueDeMascota" hidden>
+            <input id="edadMascotaRegistro" placeholder="Edad Mascota *" >
+            <input id="nombreMascotaRegistro" placeholder="Nombre de la Mascota *">
+            <input id="especieRegistro" placeholder="Especie de la Mascota *">
+            <input id="mascotaRegistro" placeholder="Raza de la mascota ">
+
+            <button id="registroMascota">Registrar Mascota</button>
+            <button id="volver6">Inicio</button>
+        </div>
+
+        
+        
     </div>
     
 
@@ -59,26 +68,19 @@
         <input id="nombreVeterinario" placeholder="Nombre del veterinario">
         <input id="documenVeterinario" placeholder="Documento del veterinario">
     
-        <button id="botonSesion">Iniciar Sesión</button>
+        <button id="botonSesionVeterinario">Iniciar Sesión</button>
         <button id="volver3">Inicio</button>
     </div>
 
     <!-- Citas -->
 
     <div id="bloqueCita" hidden>
-        <input id="nombreDueño" placeholder="Nombre del dueño">
-        <input id="documento" placeholder="Documento del dueño">
-    
-        <input id="perro" placeholder="Raza del perro">
-        <input id="nombrePerro" placeholder="Nombre del perro">
-        <input id="especie" placeholder="Especie del perro">
-        <input id="perroPeso" placeholder="Peso del perro">
-        <input id="perroAltura" placeholder="Altura del perro">
-    
-        <button id="botonFacturar">Facturar</button>
-        <button id="volver4">Inicio</button>
+        
+        <p>¿Que deseas hacer?</p>
 
-        <p id="citap">parrafo</p>
+        <button id="botonFacturar">Pedir una cita</button>
+        <button id="volver4">Volver al Inicio</button>
+
     </div>
 
    
@@ -86,7 +88,7 @@
     <!--Lista que verá el veterinario-->
 
     <div id="listaPacientes" hidden>
-        <button id="volver5">Inicio</button>
+        <button id="volver5">Inicio Veterinario</button>
         <ul>
         
         </ul>

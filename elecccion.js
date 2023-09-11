@@ -1,3 +1,5 @@
+//Interacciones de algunos botones
+
 export function MostrarRegistro(){
     document.querySelector('#bloqueRegistroUsuario').hidden = false;
 
@@ -22,4 +24,6 @@ export function home(){
     document.querySelector('#bloqueRegistroUsuario').hidden = true;
     document.querySelector('#bloqueSesionUsuario').hidden = true;
     document.querySelector('#bloqueSesionVeterinario').hidden = true;
+    document.querySelector('#bloqueCita').hidden = true;
+    document.querySelector('#listaPacientes').hidden = true;
 }
