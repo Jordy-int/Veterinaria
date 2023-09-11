@@ -1,3 +1,35 @@
+//importaciones
+import {MostrarRegistro,MostrarSesion,MostrarSesionVeterinario,home} from "./elecccion.js";
+import {RegistroUsuario} from "./registroUsuario.js";
+
+//exportaciones 
+export let datosUsuarios = [
+    {Nombre: " ", Documento: " ", EdadMascota: " ", Mascota: " ", Especie: " ", Raza: " " }
+];
+
+export let datosVeterinarios = [
+    {Nombre: "Carlos" , Documento: "1234"},
+    {Nombre: "Kevin" , Documento: "4321"}
+];
+
+//Botones de Inicio
+document.querySelector('#eleccion_Registrar').addEventListener("click",MostrarRegistro);
+document.querySelector('#eleccion_InicioDeSesion_Usuario').addEventListener("click",MostrarSesion);
+document.querySelector('#eleccion_InicioDeSesion_Veterinario').addEventListener("click",MostrarSesionVeterinario);
+
+//Botones de Registro
+
+document.querySelector('#registro').addEventListener("click",RegistroUsuario);
+
+//botones para volver al inicio de todo
+document.querySelector('#volver1').addEventListener("click",home);
+document.querySelector('#volver2').addEventListener("click",home);
+document.querySelector('#volver3').addEventListener("click",home);
+document.querySelector('#volver4').addEventListener("click",home);
+document.querySelector('#volver5').addEventListener("click",home);
+
+
+//cambiar lista
 function lista(){
     const nombre_Dueño = document.getElementById("nombreDueño").value; // llamados y encapsulación
     const dueño_documento = document.querySelector('#documento').value;
@@ -50,7 +82,7 @@ function lista(){
     }
     else{
         // El 'else' en caso que cada uno de los campos de información no hayan sido llenados
-        document.getElementById("cita").textContent = "Falta información";
+        alert("Faltan campos obligatorios por llenar");
     }
 }
 

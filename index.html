@@ -7,67 +7,91 @@
 </head>
 <body>
     <!--Elección-->
-    <p>¿Que desea hacer?</p>
+    <div id="bloqueInicio">
+        <p>¿Que desea hacer?</p>
 
-    <button id="eleccion_InicioDeSesion_Usuario" onclick="">Iniciar Sesión Usuario</button>
-    <button id="eleccion_InicioDeSesion_Veterinario" onclick="">Iniciar Sesión Veterinario</button>
-    <button id="eleccion_Registrar" onclick="">Registrar</button>
+        <button id="eleccion_InicioDeSesion_Usuario">Iniciar Sesión Usuario</button>
+        <button id="eleccion_InicioDeSesion_Veterinario">Iniciar Sesión Veterinario</button>
+        <button id="eleccion_Registrar" >Registrar Usuario</button>
+    </div>
 
-    <!-- Registro del usuario -->
-    <p id="registrop">Registro de usuario</p>
-
-    <input id="nombreDueñoRegistro" placeholder="Nombre del dueño">
-    <input id="documentoRegistro" placeholder="Documento del dueño">
-    <input id="edadDueñoRegistro" placeholder="Edad" >
-
-    <input id="nombreMascotaRegistro" placeholder="Nombre de la Mascota">
-    <input id="especieRegistro" placeholder="Especie de la Mascota">
-    <input id="mascotaRegistro" placeholder="Raza de la mascota">
-
-    <button id="registro" onclick="">Registrar</button>
-
-    <!-- Inicio de Sesión del dueño -->
-
-    <p id="sesionp">Inicio de Sesión Usuario</p>
-
-    <input id="nombreDueñoSesion" placeholder="Nombre del dueño">
-    <input id="documentoSesion" placeholder="Documento del dueño">
     
-    <button id="botonSesion" onclick="" >Iniciar Sesión</button>
+    <!-- Registro del usuario -->
+    
+    <div id="bloqueRegistroUsuario" hidden>
+        <p id="registrop" >Registro de usuario</p>
+
+        <p>Los campos con * son obligatorios</p>
+
+        <input id="nombreDueñoRegistro" placeholder="Nombre del dueño *">
+        <input id="documentoRegistro" placeholder="Documento del dueño *">
+
+        <input id="edadMascotaRegistro" placeholder="Edad Mascota *" >
+        <input id="nombreMascotaRegistro" placeholder="Nombre de la Mascota *">
+        <input id="especieRegistro" placeholder="Especie de la Mascota *">
+        <input id="mascotaRegistro" placeholder="Raza de la mascota ">
+
+        <button id="registro">Registrar</button>
+        <button id="volver1">Inicio</button>
+    </div>
+    
+
+    <!-- Inicio de Sesión del Usuario -->
+
+    <div id="bloqueSesionUsuario" hidden>
+
+        <p id="sesionp">Inicio de Sesión Usuario</p>
+
+        <input id="nombreDueñoSesion" placeholder="Nombre del dueño">
+        <input id="documentoSesion" placeholder="Documento del dueño">
+        
+        <button id="botonSesion">Iniciar Sesión</button>
+        <button id="volver2">Inicio</button>
+    </div>
+
+    
 
     <!-- Inicio de Sesión del veterinario -->
 
-    <p id="sesionPVeterinario">Inicio de Sesión Veterinario</p>
+    <div id="bloqueSesionVeterinario" hidden>
+        <p id="sesionPVeterinario">Inicio de Sesión Veterinario</p>
 
-    <input id="nombreVeterinario" placeholder="Nombre del veterinario">
-    <input id="documenVeterinario" placeholder="Documento del veterinario">
-
-    <button id="botonSesion" onclick="" >Iniciar Sesión</button>
+        <input id="nombreVeterinario" placeholder="Nombre del veterinario">
+        <input id="documenVeterinario" placeholder="Documento del veterinario">
+    
+        <button id="botonSesion">Iniciar Sesión</button>
+        <button id="volver3">Inicio</button>
+    </div>
 
     <!-- Citas -->
 
-    <p id="citap">parrafo</p>
+    <div id="bloqueCita" hidden>
+        <input id="nombreDueño" placeholder="Nombre del dueño">
+        <input id="documento" placeholder="Documento del dueño">
+    
+        <input id="perro" placeholder="Raza del perro">
+        <input id="nombrePerro" placeholder="Nombre del perro">
+        <input id="especie" placeholder="Especie del perro">
+        <input id="perroPeso" placeholder="Peso del perro">
+        <input id="perroAltura" placeholder="Altura del perro">
+    
+        <button id="botonFacturar">Facturar</button>
+        <button id="volver4">Inicio</button>
 
+        <p id="citap">parrafo</p>
+    </div>
 
-    <input id="nombreDueño" placeholder="Nombre del dueño">
-    <input id="documento" placeholder="Documento del dueño">
-
-    <input id="perro" placeholder="Raza del perro">
-    <input id="nombrePerro" placeholder="Nombre del perro">
-    <input id="especie" placeholder="Especie del perro">
-    <input id="perroPeso" placeholder="Peso del perro">
-    <input id="perroAltura" placeholder="Altura del perro">
-
-    <button id="botonFacturar" onclick="lista()" >Facturar</button>
+   
     
     <!--Lista que verá el veterinario-->
 
-    <ul>
+    <div id="listaPacientes" hidden>
+        <button id="volver5">Inicio</button>
+        <ul>
         
-    </ul>
-
-    <p id="listaVeterinario">atrás esta la lista del veterinario</p>
+        </ul>
+    </div>
     
-    <script src="javascript.js"></script>
+    <script src="javascript.js" type="module"></script>
 </body>
 </html>
