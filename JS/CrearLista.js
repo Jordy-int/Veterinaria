@@ -1,5 +1,5 @@
-import {datosUsuarios} from "./javascript.js"
-import {encontrarGlobal} from "./iniciarsesionusuario.js"
+import {datosUsuarios} from "./JS/javascript.js"
+import {encontrarGlobal} from "./JS/iniciarsesionusuario.js"
 
 //Creación de citas
 export function ListaCitas() {

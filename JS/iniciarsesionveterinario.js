@@ -1,4 +1,4 @@
-import {datosVeterinarios} from "./javascript.js"
+import {datosVeterinarios} from "./JS/javascript.js"
 
 export function sesionVeterinario() {
     let encontrar = datosVeterinarios.find(elemento => elemento.Documento == document.querySelector('#documenVeterinario').value);

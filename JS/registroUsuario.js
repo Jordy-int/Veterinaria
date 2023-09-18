@@ -1,5 +1,5 @@
 //importaciones
-import { datosUsuarios } from './javascript.js'
+import { datosUsuarios } from './JS/javascript.js'
 
 //Registro del usuario
 let nombreDueñoglobal = "";

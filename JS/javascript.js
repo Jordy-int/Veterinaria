@@ -1,9 +1,9 @@
 //importaciones
-import {MostrarRegistro,MostrarSesion,MostrarSesionVeterinario,home} from "./elecccion.js"
-import {RegistroUsuario,registrarMascota} from "./registroUsuario.js"
-import {sesioUsuario} from "./iniciarsesionusuario.js"
-import {sesionVeterinario} from "./iniciarsesionveterinario.js"
-import {ListaCitas} from "./CrearLista.js"
+import {MostrarRegistro,MostrarSesion,MostrarSesionVeterinario,home} from "./JS/elecccion.js"
+import {RegistroUsuario,registrarMascota} from "./JS/registroUsuario.js"
+import {sesioUsuario} from "./JS/iniciarsesionusuario.js"
+import {sesionVeterinario} from "./JS/iniciarsesionveterinario.js"
+import {ListaCitas} from "./JS/CrearLista.js"
 
 //exportaciones 
 export let datosUsuarios = [

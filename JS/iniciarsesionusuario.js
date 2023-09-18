@@ -1,4 +1,4 @@
-import { datosUsuarios } from './javascript.js'
+import { datosUsuarios } from './JS/javascript.js'
 
 export let encontrarGlobal = "";
 
